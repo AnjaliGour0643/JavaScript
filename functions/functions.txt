@@ -1,0 +1,66 @@
+In JavaScript, functions are blocks of code that can be executed when called. 
+They allow you to encapsulate logic, take input (parameters), and optionally return a value. 
+
+1. Function Declaration
+-----------------------
+A standard way to define a function using the function keyword. 
+It can be called before or after it's defined because of hoisting.
+
+Example:
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+console.log(greet("Alice"));  // Output: "Hello, Alice!"
+
+
+
+2. Function Expression
+-----------------------
+A function can be stored in a variable and invoked using that variable. 
+Function expressions are not hoisted, so they must be defined before use.
+
+Example:
+javascript
+Copy code
+const square = function(x) {
+    return x * x;
+};
+console.log(square(4));  // Output: 16
+
+
+
+3. Arrow Function
+------------------
+Arrow functions are a shorter syntax for writing functions. 
+They do not have their own this, arguments, or super, and are best suited for non-method functions.
+
+Examples:
+javascript
+Copy code
+const sayHello = (name) => `Hello, ${name}!`;
+console.log(sayHello("John"));  // Output: "Hello, John!"
+
+
+
+
+Function to add two numbers
+----------------------------
+function add(a, b) {
+    return a + b;
+}
+
+// Prompt user to enter values for a and b
+let a = parseInt(prompt("Enter the value of a:"));
+let b = parseInt(prompt("Enter the value of b:"));
+
+// Calculate the sum
+let sum = add(a, b);
+
+// Print the sum in the desired format
+console.log(`The sum of ${a} and ${b} is ${sum}`);
+
+Explanation:
+prompt() is used to take user input for the values of a and b.
+parseInt() ensures that the input is converted to a number.
+The sum of a and b is calculated using the add() function.
+console.log() prints the result in the format: "The sum of a and b is (sum)".
