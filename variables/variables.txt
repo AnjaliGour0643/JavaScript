@@ -1,0 +1,46 @@
+In JavaScript, variables are used to store data values. You can declare variables using the var, let, or const keywords. 
+
+1. var
+---------
+Scope: Function-scoped or globally-scoped.
+Hoisting: Variables declared with var are hoisted and initialized with undefined.
+Re-declaration: You can re-declare var variables within the same scope.
+
+
+2. let
+---------
+Scope: Block-scoped (only available within the block where it is defined).
+Hoisting: Variables declared with let are hoisted but not initialized.
+Re-declaration: You cannot re-declare let variables in the same scope.
+
+
+3. const
+---------
+Scope: Block-scoped.
+Hoisting: Variables declared with const are hoisted but not initialized.
+Immutability: const variables cannot be reassigned, though objects and arrays defined with const can have their properties or elements changed.
+Re-declaration: You cannot re-declare or reassign const variables.
+
+
+**********************
+
+HOISTING:
+The declaration of the variable (not its value) is moved to the top of its scope (function or global) during the compile phase, before the code is executed.
+This allows you to use or reference the variable before its actual declaration appears in the code.
+(In simpler terms, hoisting allows you to use variables and functions before they are actually declared in the code.)
+
+Example:    console.log(a);  // Output: undefined (due to hoisting)
+            var a = 10;
+            console.log(a);  // Output: 10 (after assignment)
+
+(Step-by-step breakdown:
+During the compile phase, JavaScript moves the declaration of a (var a) to the top of the scope but not the assignment (a = 10).
+When you try to access a before the assignment (console.log(a);), it is already declared but not initialized with its intended value, so it prints undefined.
+After a = 10; is executed, the variable gets its assigned value, and then the next console.log(a); prints 10.)
+
+**********************
+
+SUMMARY
+var: Function-scoped, allows re-declaration.
+let: Block-scoped, does not allow re-declaration.
+const: Block-scoped, does not allow re-assignment or re-declaration, but you can modify objects and arrays defined with const.
