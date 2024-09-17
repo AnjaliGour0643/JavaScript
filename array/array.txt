@@ -1,0 +1,35 @@
+In JavaScript, arrays use numbered indexes.  
+In JavaScript, objects use named indexes.
+
+Arrays are a special kind of objects, with numbered indexes.
+
+------------------------------
+Array Elements Can Be Objects
+
+JavaScript variables can be objects. Arrays are special kinds of objects.
+Because of this, you can have variables of different types in the same Array.
+
+You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array
+
+------------------------------
+When to Use Arrays. When to use Objects
+
+JavaScript does not support associative arrays. (named indexes)
+You should use objects when you want the element names to be strings (text).
+You should use arrays when you want the element names to be numbers.
+
+------------------------------
+WARNING !!
+If you use named indexes, JavaScript will redefine the array to an object.
+
+After that, some array methods and properties will produce incorrect results.
+
+Example:
+const person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46;
+person.length;     // Will return 0
+person[0];         // Will return undefined
+
+-------------------------------
