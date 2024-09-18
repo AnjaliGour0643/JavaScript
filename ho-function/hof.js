@@ -69,8 +69,23 @@ a(whatsUp)
 // a(function(){
 //     console.log("Keep it up")
 // })
+// -------------------------------------------
 
+// -----> Sample Example 3 ------- Anonymous function
 
+// function outer(){
+//     const a = 10
+//     function x(){
+//         const b = 5
+//         return function(){
+//             console.log(a + b)
+//         }
+//     }
+//     return x;
+// }
+// const add = outer()
+
+// console.log(add);
 
 
 

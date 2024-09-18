@@ -1,4 +1,7 @@
 /*
+CLOSURE - a closure gives you access to an outer function's scope from an inner function
+
+
 In JavaScript, every time a function is created, it keeps track of the variables and functions in its surrounding scope (the scope where the function was defined). 
 This means that a function has access to variables that are declared in its outer scope (even after those outer functions finish executing), 
 as well as its own local scope.
