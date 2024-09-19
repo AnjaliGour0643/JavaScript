@@ -1,0 +1,44 @@
+A promise in JavaScript is like a container for a future value. 
+It is a way of saying, “I don’t have this value right now, but I will have it later.”
+
+Promise -> Object -> represents the eventual completion (or failure) of an asynchronous operation.
+-----------(used for parallel execution) promise means to promise a code execution which is asynchronous
+Promise code are the codes which are dependent on 3rd party[axios]
+A promise has three possible states:
+
+1. Pending: The operation is still ongoing. (undefined)
+2. Fulfilled: The operation completed successfully, and the promise is resolved with a value. (a result value)
+3. Rejected: The operation failed, and the promise is rejected with a reason (error). (an error object)
+
+
+Syntax : 
+let promise = new Promise(function(resolve, reject){
+    //do something
+});
+
+Resolve and Reject are 2 CALLBACKS provided by javascript itself.
+
+These are called as follows: 
+resolve(value) -> if the job is finished successfully
+reject(error) -> if the job fails
+
+
+The promise object returned by the new Promise constructor has these properties
+1. state : initially pending, then changed to either "fulfilled" when resolve is called OR "rejected" when reject is called.
+2. result : Initially undefined, then changes to value if resolved(resolve(value)) OR error when rejected(reject(error))
+
+
+-> If you are using any of these , that means you are writing asynchronous code
+fetch                            
+axios                       (asynchronous code behind the scene chalte hai
+promise                                  kisi bhi order me)
+setTimeout
+setInterval
+XMLHttpRequest
+
+-> After the complete execution of the asynchronous code, then answer ko kaise chalana hai? is decided by the following terms
+then catch
+callbacks                     
+async await
+
+
