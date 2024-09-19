@@ -7,8 +7,9 @@ const p2 = new Promise((resolve, reject) => {
 const promises = [p1, p2];
 
 Promise.allSettled(promises)
-    .then((results) => results.forEach((result) => 
-        console.log(result.status)));
+    .then((results) => results.forEach((i) => 
+        console.log(i.status)      // console.log(i.status, i.value, i.reason)));
+    ));
 
 
 // status -> state of promise
@@ -50,8 +51,7 @@ Promise.allSettled([p1, p2]).then(results => {
   console.log(results);
 });
 
-
-// Output:
+// Output :
 // [
 //   { status: 'fulfilled', value: 100 },
 //   { status: 'fulfilled', value: 200 }
