@@ -25,7 +25,7 @@ let person1 = new Person("Alex");
 let person2 = new Person("Betty");
 
 person1.greet(); // "Hello, my name is Alice"
-person2.greet(); // "Hello, my name is Bob"
+person2.greet(); // "Hello, my name is Betty"
 
 // Both person1 and person2 share the greet method from Person.prototype
 

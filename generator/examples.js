@@ -28,10 +28,10 @@ function* numbersGen(){
 
 const gen = numbersGen();
 console.log(gen.next());  // returns object with value
-// console.log(gen.next());
-// console.log(gen.next());
-// console.log(gen.next());
-// console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
 // console.log(gen.next());
 
 
