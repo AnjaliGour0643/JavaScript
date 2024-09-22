@@ -73,11 +73,11 @@ console.log("Includes 'Mango'?:", fruits.includes("Mango"));
 // console.log("First fruit longer than 5 characters:", longFruit);
 
 // Array findIndex() - Find the index of the first fruit longer than 5 characters
-let longFruitIndex = fruits.findIndex(fruit => fruit.length > 5);
+let longFruitIndex = fruits.findIndex(fruit => fruits.length > 5);
 console.log("Index of the first fruit longer than 5 characters:", longFruitIndex);
 
 // Array findLast() - Find the last fruit longer than 5 characters
-let lastLongFruit = fruits.findLast(fruit => fruit.length > 5);
+let lastLongFruit = fruits.findLast(fruit => fruits.length > 5);
 console.log("Last fruit longer than 5 characters:", lastLongFruit);
 
 // Array findLastIndex() - Find the index of the last fruit longer than 5 characters

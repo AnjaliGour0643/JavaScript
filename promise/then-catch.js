@@ -1,21 +1,21 @@
 // Example 1
-// let promise = new Promise(function (resolve, reject) {
-//     const x = 4
-//     const y = 4
-//     if (x === y) {
-//         resolve();
-//     } else {
-//         reject();
-//     }
-// });
+let promise = new Promise(function (resolve, reject) {
+    const x = 4
+    const y = 4
+    if (x === y) {
+        resolve();
+    } else {
+        reject();
+    }
+});
 
-// promise
-//     .then(function () {
-//         console.log('Successfully executed');
-//     })
-//     .catch(function () {
-//         console.log('Some error has occurred');
-//     }); 
+promise
+    .then(function () {
+        console.log('Successfully executed');
+    })
+    .catch(function () {
+        console.log('Some error has occurred');
+    }); 
 
 
 
